@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="_PRVW__16122fbe81b363001613218897e532a8">12122fbe0fb36300a0ca85ace1050ea9</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"080be11bfbba4f47935465671a096f77","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":""},"id":"080be11bfbba4f47935465671a096f77"}],"goals":[{"name":"primary","trigger_id":"080be11bfbba4f47935465671a096f77","nodes":[{"type":"StartGoal","goal_id":"f6f33d14d99b4e76b6340930d0d5660a","greeting_msg":{"type":"String","mode":"string","value":""},"id":"3734fb691e4645b9bf47c65c1280d059","name":"Start"},{"type":"TerminateGoal","goal_id":"f6f33d14d99b4e76b6340930d0d5660a","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"1097c6dcf749473698f9ee4d7469a0b6","name":"End"},{"type":"CarouselInputPrompt","carousel_options_script":"(function execute() {\n    \n\n       var options = [];\n       options.push(\n            {\n                'Name': 'trein',\n                'Value': 'trein',\n                'Body': 'http://www.kvdemaaskant.be/wp-content/uploads/2017/09/2016_2-300x169.jpg'\n            }\n       );\n       options.push(\n            {\n                'Name': 'brug',\n                'Value': 'brug',\n                'Body': 'http://www.kvdemaaskant.be/wp-content/uploads/2017/09/2015_5-300x225.jpg'\n            }\n       );\n       return options;\n    \n})()\n","no_options_found_message":{"type":"String","mode":"string","value":"No images found"},"id":"749037d229364cc68ba17a2e3c37fc94","name":"laptop_select","goal_id":"f6f33d14d99b4e76b6340930d0d5660a","variable_id":"d0e50d6e0d6247a3a48b0874e97c08c7","message":{"type":"String","mode":"string","value":"Select the laptop"},"optional":false}],"edges":[{"type":"Edge","source_node_id":"3734fb691e4645b9bf47c65c1280d059","target_node_id":"749037d229364cc68ba17a2e3c37fc94","id":"c42ef6434ff4483fb6f33d99bcad00df"},{"type":"Edge","source_node_id":"749037d229364cc68ba17a2e3c37fc94","target_node_id":"1097c6dcf749473698f9ee4d7469a0b6","id":"dc65e99c93ba4934a4a451b98bfcdc5e"}],"id":"f6f33d14d99b4e76b6340930d0d5660a"}],"script_variables":[],"glide_variables":[{"type":"CarouselImage","id":"d0e50d6e0d6247a3a48b0874e97c08c7","name":"laptop_select"}],"applicability":{"type":"Applicability","mode":"script","value":""},"roles":[],"scope":"6ead8e780f603200cd674f8ce1050ed1","id":"38512fbe0fb36300a0ca85ace1050e8c","name":"_PRVW__16122fbe81b363001613218897e532a8","key_phrases":["Order a laptop","new laptop","laptop"]}</design_definition>
+        <design_topic_id>38512fbe0fb36300a0ca85ace1050e8c</design_topic_id>
+        <name>_PRVW__16122fbe81b363001613218897e532a8</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-27 10:02:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5a122fbe0fb36300a0ca85ace1050eab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_design_topic_5a122fbe0fb36300a0ca85ace1050eab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-27 10:02:44</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <connect_queue/>
+        <description>Order a laptop</description>
+        <graph>{
+  "graph_api_version": "1.0.3",
+  "goals": {
+    "f6f33d14d99b4e76b6340930d0d5660a": {
+      "id": "f6f33d14d99b4e76b6340930d0d5660a",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "3734fb691e4645b9bf47c65c1280d059": {
+          "id": "3734fb691e4645b9bf47c65c1280d059",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "1097c6dcf749473698f9ee4d7469a0b6": {
+          "id": "1097c6dcf749473698f9ee4d7469a0b6",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "749037d229364cc68ba17a2e3c37fc94": {
+          "stepType": "CarouselPrompt",
+          "name": "laptop_select",
+          "prompt": {
+            "value": "",
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": "",
+          "optional": false,
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "d0e50d6e0d6247a3a48b0874e97c08c7",
+          "id": "749037d229364cc68ba17a2e3c37fc94",
+          "carouselLabel": {
+            "value": "Select the laptop",
+            "mode": "simple"
+          },
+          "carouselItemExpression": "(function execute() {\n    \n\n       var options = [];\n       options.push(\n            {\n                'Name': 'trein',\n                'Value': 'trein',\n                'Body': 'http://www.kvdemaaskant.be/wp-content/uploads/2017/09/2016_2-300x169.jpg'\n            }\n       );\n       options.push(\n            {\n                'Name': 'brug',\n                'Value': 'brug',\n                'Body': 'http://www.kvdemaaskant.be/wp-content/uploads/2017/09/2015_5-300x225.jpg'\n            }\n       );\n       return options;\n    \n})()\n",
+          "noRecordsResponseMsg": {
+            "value": "No images found",
+            "mode": "simple"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "dc65e99c93ba4934a4a451b98bfcdc5e",
+          "edgeType": "Edge",
+          "source": "749037d229364cc68ba17a2e3c37fc94",
+          "target": "1097c6dcf749473698f9ee4d7469a0b6",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c42ef6434ff4483fb6f33d99bcad00df",
+          "edgeType": "Edge",
+          "source": "3734fb691e4645b9bf47c65c1280d059",
+          "target": "749037d229364cc68ba17a2e3c37fc94",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "d0e50d6e0d6247a3a48b0874e97c08c7": {
+      "id": "d0e50d6e0d6247a3a48b0874e97c08c7",
+      "name": "laptop_select",
+      "label": "Carousel 69",
+      "varType": "carousel-image"
+    }
+  }
+}</graph>
+        <key_phrases>Order a laptop,new laptop,laptop</key_phrases>
+        <live_agent>false</live_agent>
+        <name>Order a laptop</name>
+        <roles/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-27 09:59:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>38512fbe0fb36300a0ca85ace1050e8c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Order a laptop</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_topic_38512fbe0fb36300a0ca85ace1050e8c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-27 10:04:44</sys_updated_on>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=38512fbe0fb36300a0ca85ace1050e8c"/>
+</record_update>
